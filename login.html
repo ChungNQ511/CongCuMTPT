@@ -1,11 +1,9 @@
 <form>
     <label> Username: </label>
-    <input type="text" id="lblUserName" class="fadeIn second" name="txtUserName" placeholder="Username"
-        required><br><br>
+    <input type="text" id="lblUserName" class="fadeIn second" name="txtUserName" placeholder="Username"><br><br>
 
     <label> Password: </label>
-    <input type="password" id="lblPassword" class="fadeIn second" name="txtPassword" placeholder="Password"
-        required><br><br>
+    <input type="password" id="lblPassword" class="fadeIn second" name="txtPassword" placeholder="Password"><br><br>
 
     <input type="button" name="btnLogin" value="Login" onclick="loginFunc()"></input>
 
@@ -16,8 +14,7 @@
             if (userName == 'admin' && password == 'admin') {
                 alert('Succeed');
                 window.location.replace("/loginvalid.html")
-            }
-            else
+            } else
                 alert('Failed');
         }
     </script>
