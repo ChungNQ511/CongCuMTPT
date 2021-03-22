@@ -1,9 +1,11 @@
 <form>
     <label> Username: </label>
-    <input type="text" id="lblUserName" class="fadeIn second" name="txtUserName" placeholder="Username"><br><br>
+    <input type="text" id="lblUserName" class="fadeIn second" name="txtUserName" placeholder="Username"
+        required><br><br>
 
     <label> Password: </label>
-    <input type="password" id="lblPassword" class="fadeIn second" name="txtPassword" placeholder="Password"><br><br>
+    <input type="password" id="lblPassword" class="fadeIn second" name="txtPassword" placeholder="Password"
+        required><br><br>
 
     <input type="button" name="btnLogin" value="Login" onclick="loginFunc()"></input>
 
@@ -13,7 +15,7 @@
             var password = document.getElementById("lblPassword").value;
             if (userName == 'admin' && password == 'admin') {
                 alert('Succeed');
-                window.location = "file:///D:/THCC&MTPT/BaiTap/loginvalid.html";
+                window.location.replace("/loginvalid.html")
             }
             else
                 alert('Failed');
