@@ -8,11 +8,13 @@
     <input type="button" name="btnLogin" value="Login" onclick="loginFunc()"></input>
 
     <script>
-        function loginFunc(){
-            var userName= document.getElementById("lblUserName").value;
-            var password= document.getElementById("lblPassword").value;
-            if(userName=='admin' && password=='admin')
+        function loginFunc() {
+            var userName = document.getElementById("lblUserName").value;
+            var password = document.getElementById("lblPassword").value;
+            if (userName == 'admin' && password == 'admin') {
                 alert('Succeed');
+                window.location = "file:///D:/THCC&MTPT/BaiTap/loginvalid.html";
+            }
             else
                 alert('Failed');
         }
