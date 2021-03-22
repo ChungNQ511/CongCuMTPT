@@ -5,5 +5,16 @@
     <label> Password: </label>
     <input type="password" id="lblPassword" class="fadeIn second" name="txtPassword" placeholder="Password"><br><br>
 
-    <input type="button" name="btnLogin" value="Login"></input>
+    <input type="button" name="btnLogin" value="Login" onclick="loginFunc()"></input>
+
+    <script>
+        function loginFunc(){
+            var userName= document.getElementById("lblUserName").value;
+            var password= document.getElementById("lblPassword").value;
+            if(userName=='admin' && password=='admin')
+                alert('Succeed');
+            else
+                alert('Failed');
+        }
+    </script>
 </form>
